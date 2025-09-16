@@ -94,6 +94,8 @@ $data = [
 // Call the function and store the result
 $result = buildArticle($data);
 
+// print_r($data);
+
 // Send the result to the JavaScript console
 echo "<script>console.log(" . json_encode($result) . ");</script>";
 ?>
