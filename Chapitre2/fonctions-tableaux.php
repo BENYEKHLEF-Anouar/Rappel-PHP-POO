@@ -251,4 +251,44 @@ $summary = array_reduce(
 print_r($normalized);
 print_r($summary);
 
+// $normalized
+// Array
+// (
+//     [0] => Array
+//         (
+//             [id] => 3
+//             [slug] => third-article
+//             [views] => 300
+//             [author] => Charlie
+//             [category] => Tech
+//         )
+//     [1] => Array
+//         (
+//             [id] => 4
+//             [slug] => fourth-article
+//             [views] => 200
+//             [author] => Dave
+//             [category] => Lifestyle
+//         )
+//     [2] => Array
+//         (
+//             [id] => 1
+//             [slug] => first-article
+//             [views] => 100
+//             [author] => Alice
+//             [category] => Tech
+//         )
+// )
 
+
+// $summary
+// Array
+// (
+//     [count] => 3
+//     [views_sum] => 600
+//     [by_category] => Array
+//         (
+//             [Tech] => 2
+//             [Lifestyle] => 1
+//         )
+// )
