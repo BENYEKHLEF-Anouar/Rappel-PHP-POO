@@ -50,3 +50,14 @@ $byAuthor = array_reduce(
 
 
 // 6
+$allTags = array_merge(...array_map(fn($a) => $a['tags'], $published));
+
+$tagFreq = array_reduce(
+  $allTags,
+  function(array $acc, string $tag): array {
+      $acc[$tag] = ($acc[$tag] ?? 0) + 1;
+      return $acc;
+  },
+  []
+);
+
