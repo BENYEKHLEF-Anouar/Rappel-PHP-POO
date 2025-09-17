@@ -167,7 +167,7 @@ $tagFreq = array_reduce(
 
 
 
-//7
+// 7
 echo "Top 3 (views):\n";
 foreach ($top3 as $a) {
   echo "- {$a['title']} ({$a['views']} vues) — {$a['slug']}\n";

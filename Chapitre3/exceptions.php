@@ -64,3 +64,8 @@ try {
 
   exit(1);
 }
+
+
+// A SeedException is not a standard PHP class, 
+// but rather a specific exception defined by the SeedStack framework 
+// to handle configuration or injection errors within its ecosystem. 
