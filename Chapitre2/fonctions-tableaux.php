@@ -8,6 +8,9 @@ $articles = [
   ['id'=>4,'title'=>'Validation FormRequest','category'=>'laravel','views'=>210,'author'=>'Sara','published'=>true,  'tags'=>['laravel','validation']],
 ];
 
+
+
+
 // 1
 function slugify(string $title): string {
     $slug = strtolower($title);
