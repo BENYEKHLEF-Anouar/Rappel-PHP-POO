@@ -15,15 +15,18 @@ function slugify(string $title): string {
     return trim($slug, '-');
 }
 
-// 2
-$published = array_values(
-  array_filter($articles, fn(array $a) => $a['published'] ?? false)
-);
-
 // Intro Laravel            → intro-laravel
 // PHP 8 en pratique        → php-8-en-pratique
 // Composer & Autoload      → composer-autoload
 // Validation FormRequest   → validation-formrequest
+
+
+
+
+// 2
+$published = array_values(
+  array_filter($articles, fn(array $a) => $a['published'] ?? false)
+);
 
 
 // [
