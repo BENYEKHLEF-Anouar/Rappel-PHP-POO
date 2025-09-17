@@ -262,28 +262,31 @@ print_r($summary);
 // (
 //     [0] => Array
 //         (
-//             [id] => 3
-//             [slug] => third-article
+//             [id] => 2
+//             [slug] => php-8-en-pratique
 //             [views] => 300
-//             [author] => Charlie
-//             [category] => Tech
+//             [author] => Yassine
+//             [category] => php
 //         )
+
 //     [1] => Array
 //         (
 //             [id] => 4
-//             [slug] => fourth-article
-//             [views] => 200
-//             [author] => Dave
-//             [category] => Lifestyle
+//             [slug] => validation-formrequest
+//             [views] => 210
+//             [author] => Sara
+//             [category] => laravel
 //         )
+
 //     [2] => Array
 //         (
 //             [id] => 1
-//             [slug] => first-article
-//             [views] => 100
-//             [author] => Alice
-//             [category] => Tech
+//             [slug] => intro-laravel
+//             [views] => 120
+//             [author] => Amina
+//             [category] => php
 //         )
+
 // )
 
 
