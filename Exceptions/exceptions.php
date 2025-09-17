@@ -69,3 +69,14 @@ try {
 // A SeedException is not a standard PHP class, 
 // but rather a specific exception defined by the SeedStack framework 
 // to handle configuration or injection errors within its ecosystem. 
+
+
+/**
+ * Documentation:
+ * Ce code PHP est un script autonome (standalone) conçu pour être exécuté en ligne de commande (CLI).
+ * Il s'agit d'un outil de validation et de préparation de données
+ * pour un processus appelé "seed" (semis ou ensemencement de base de données).
+ * En gros, il charge un fichier JSON contenant des données d'articles,
+ * vérifie leur validité minimale (titre et slug obligatoires), et affiche un message de succès ou d'erreur.
+ * Si tout va bien, il retourne un code de sortie 0 (succès) ; sinon, 1 (erreur).
+ */

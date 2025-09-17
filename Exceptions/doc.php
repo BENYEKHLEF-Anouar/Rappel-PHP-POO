@@ -85,3 +85,9 @@ Exit codes:
 1 → failure.
 
 This is exactly the recommended structure for robust CLI (command line interface) PHP scripts. 
+
+
+A command line interface (CLI) is a text-based interface 
+where you can input commands that interact with a computer's operating system. 
+The CLI operates with the help of the default shell, 
+which is between the operating system and the user.
