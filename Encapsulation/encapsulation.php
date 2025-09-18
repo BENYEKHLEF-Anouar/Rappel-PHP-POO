@@ -138,33 +138,32 @@ class ArticleRepository
 }
 
 // Demo
-
-// Étape 1 — Test readonly (doit planter si décommenté)
-// $a = new Article(1, "Test readnly");
-// $a->id = 99; // Erreur attendue : Cannot modify readonly property
+// Step 1 — Test readonly (should fail if uncommented)
+// $a = new Article(1, "Test readonly");
+// $a->id = 99; // Expected error: Cannot modify readonly property
 
 // 
 // $a = Article::fromTitle(1, 'Test readonly');
-// $a->id = 99; // → devrait lancer une erreur : Cannot modify readonly property
+// $a->id = 99; // Should throw an error: Cannot modify readonly property
 
-// Étape 2 + 3 — Générer 3 articles et les afficher
-$a1 = Article::fromTitle(1, "Encapsulation & visibilité en PHP");
-$a2 = FeaturedArticle::fromTitle(2, "Lire moins, comprendre plus");
-$a3 = Article::fromTitle(3, "Programmation orientée objet");
+// Step 2 + 3 — Generate 3 articles and display them
+$a1 = Article::fromTitle(1, "Encapsulation & visibility in PHP");
+$a2 = FeaturedArticle::fromTitle(2, "Read less, understand more");
+$a3 = Article::fromTitle(3, "Object-oriented programming");
 
-$a2->addTag("best");
-$a3->addTag("oop");
+$a2->addTag("CH1");
+$a3->addTag("CH2");
 
-// Sauvegarde dans le dépôt (contrainte unicité slug)
+// Save to the repository (slug uniqueness constraint)
 ArticleRepository::save($a1);
 ArticleRepository::save($a2);
 ArticleRepository::save($a3);
 
-// Affichage du tableau (préparation JSON)
+// Display the array (preparation for JSON)
 print_r(array_map(fn($a) => $a->toArray(), ArticleRepository::all()));
 
-// Affichage du nombre d’articles
-echo "Total articles : " . ArticleRepository::count() . PHP_EOL;
+// Display the number of articles
+echo "Total articles: " . ArticleRepository::count() . PHP_EOL;
 
-// Étape 4 — Test contrainte unicité
-// ArticleRepository::save(Article::fromTitle(4, "Lire moins, comprendre plus")); // Erreur DomainException
+// Step 4 — Test slug uniqueness constraint
+// ArticleRepository::save(Article::fromTitle(4, "Read less, understand more")); // DomainException error
