@@ -168,6 +168,3 @@ echo "Total articles : " . ArticleRepository::count() . PHP_EOL;
 
 // Étape 4 — Test contrainte unicité
 // ArticleRepository::save(Article::fromTitle(4, "Lire moins, comprendre plus")); // Erreur DomainException
-
-
-// I AM HERE // Key points
