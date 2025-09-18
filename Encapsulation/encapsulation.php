@@ -14,7 +14,7 @@ class Article
     private string $slug;             // derived
     private array $tags = [];         // encapsulated
 
-    // private static int $count = 0;    // partagé
+    // private static int $count = 0;    // partagé (shared)
     //step 4 : delete the $count and replace it with ArticleRepository
 
     public function __construct(int $id, string $title, array $tags = [])
@@ -168,3 +168,6 @@ echo "Total articles : " . ArticleRepository::count() . PHP_EOL;
 
 // Étape 4 — Test contrainte unicité
 // ArticleRepository::save(Article::fromTitle(4, "Lire moins, comprendre plus")); // Erreur DomainException
+
+
+// I AM HERE // Key points
