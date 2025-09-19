@@ -33,3 +33,21 @@
 
 // composer dump-autoload
 //  -> Regenerates the Composer autoloader files to include all classes and files from your project and its dependencies. 
+// Whenever you add or change something in the autoload section, you must regenerate the autoload files.
+
+
+// -----------------
+
+// "autoload": {
+//     "psr-4": {
+//         "App\\": "src/"
+//     }
+// }
+
+// autoload → This section defines how Composer should automatically load your PHP classes without requiring manual require or include.
+
+// psr-4 → This is the autoloading standard Composer uses. PSR-4 maps namespaces to directories.
+
+// "App\\" → This is the namespace prefix. Any PHP class starting with App\... will be handled by this rule.
+
+// "src/" → This is the folder where those classes actually live.
