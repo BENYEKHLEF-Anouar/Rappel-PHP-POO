@@ -1,4 +1,9 @@
 {
     "name": "interfaces-traits/c3-php",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
 }
