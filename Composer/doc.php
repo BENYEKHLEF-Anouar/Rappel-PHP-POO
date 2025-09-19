@@ -51,3 +51,21 @@
 // "App\\" → This is the namespace prefix. Any PHP class starting with App\... will be handled by this rule.
 
 // "src/" → This is the folder where those classes actually live.
+
+
+// ----------------------------------------------------------------------------
+
+// php -r "@unlink('storage/articles.seed.json'); echo 'OK\n';"
+
+// php -r "<code>"
+// Runs the given PHP code directly from the command line (without needing a .php file).
+
+// @unlink('storage/articles.seed.json');
+// Tries to delete the file storage/articles.seed.json.
+
+// unlink() is the PHP function for deleting a file.
+
+// The @ suppresses errors (so if the file doesn’t exist, it won’t throw a warning).
+
+// echo 'OK\n';
+// Prints OK followed by a newline (\n).

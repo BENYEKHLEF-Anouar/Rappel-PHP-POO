@@ -12,8 +12,7 @@
     },
     "scripts": {
       "start": "php cli/app.php",
-      "seed": "php cli/seed_articles.php --count=10 --out=storage/articles.seed.json",
+      "seed": "php cli/seed_articles.php --count=20 --out=storage/articles.seed.json",
       "clean": "php -r \"@unlink('storage/articles.seed.json'); echo 'OK\\n';\""
     }
   }
-  
