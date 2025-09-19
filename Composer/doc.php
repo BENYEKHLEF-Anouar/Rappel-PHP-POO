@@ -25,3 +25,11 @@
 // Save time: You don’t need to write excessive code for requiring files or manually fetching libraries; Composer does it for you.
 // Ensure compatibility: It fetches the correct library versions and ensures there are no conflicts.
 // Simplify CLI scripts: As shown in the course, you can create scripts like `start` or `seed` to generate files like `articles.seed.json` for use in Laravel.
+
+
+
+// composer init
+//  -> Initializes a new Composer project by creating a composer.json file in the current directory.
+
+// composer dump-autoload
+//  -> Regenerates the Composer autoloader files to include all classes and files from your project and its dependencies. 
