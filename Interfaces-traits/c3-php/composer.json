@@ -1,9 +1,4 @@
 {
-    "name": "solicode/c3-php",
-    "type": "project",
-    "require": {},
-    "autoload": {
-      "psr-4": { "App\\": "src/" }
-    }
-  }
-  
+    "name": "interfaces-traits/c3-php",
+    "require": {}
+}
