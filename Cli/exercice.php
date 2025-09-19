@@ -158,8 +158,12 @@ try {
 exit(EXIT_OK);
 ?>
 
-Rappel-PHP-POO/Cli/articles.csv
+
 <!-- php exercice.php --input=/Cli/articles.csv -->
+<!-- php Rappel-PHP-POO/Cli/exercice.php --input=Rappel-PHP-POO/Cli/articles.csv -->
+
+
+<!-- php exercice.php --input=articles.csv (The Right One) -->
 
 
 <!-- type <<CSV > /tmp/articles.csv
